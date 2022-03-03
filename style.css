@@ -1,0 +1,130 @@
+@import url(https://fontlibrary.org//face/beuron);
+
+:root {
+    --image-width: 30vw;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 10, 20);
+    color: rgb(180, 180, 180);
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+figure {
+    width: var(--image-width);
+    height: 100%;
+
+    margin: 0;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+img {
+    height: inherit;
+}
+
+.thunder-txt-container {
+    width: var(--image-width);
+    height: fit-content;
+    background-color: rgba(360, 360, 360, 0.1);
+    position: absolute;
+    top:200px;
+}
+
+.thunder-txt {
+    margin: 0;
+    text-align: center;
+    font-size: 4em;
+    font-family: "BeuronRegular";
+}
+
+figcaption {
+    position: relative;
+    bottom: 50px;
+}
+
+span {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+.cta {
+    width: 60%;
+    margin: 100px 100px 50px;
+}
+
+form {
+    padding: 40px 100px;
+
+    background-color: black;
+    color: white;
+}
+
+form p {
+    margin: 0 0 20px 0;
+}
+
+.form-controls {
+    width: 50%;
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+label {
+    display: block;
+    font-family: "BeuronRegular";
+}
+
+input {
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 1px solid cornflowerblue;
+}
+
+.error > input {
+    border: 1px solid red;
+}
+
+.error::after {
+    display: block;
+    color: red;
+    content: "* Passwords do not match";
+}
+
+.submission-section {
+    margin: 20px 100px;
+}
+
+button {
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    background-color: lightgray;
+    border: transparent;
+    border-radius: 12px;
+}
+
+button:active {
+    background-color: gray;
+}
